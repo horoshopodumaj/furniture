@@ -63,6 +63,30 @@
         cursor: pointer;
     }
 
+    &__social {
+        width: 125px;
+        margin-right: auto;
+        margin-left: 100px;
+    }
+    &__social-link {
+        padding-left: 28px;
+    }
+    &__social-item,
+    &__menu-item {
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    &__social-link,
+    &__menu-link {
+        color: #707070;
+    }
+
+    &__menu {
+        margin-right: 60px;
+        width: 125px;
+    }
+
     &__copyright {
         background-color: $title;
         text-align: center;
