@@ -11,6 +11,10 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+        />
         <link rel="stylesheet" href="css/style.min.css" />
     </head>
     <body>
@@ -121,7 +125,12 @@
                         </div>
                     </div>
                     <div class="about__popup">
-                        <a class="about__popup-play" href="#">
+                        <a
+                            class="about__popup-play"
+                            data-fancybox
+                            data-caption="Video"
+                            href="https://youtu.be/_g6lRck-wAs"
+                        >
                             <img
                                 class="about__popup-imgbtn"
                                 src="images/play_button.svg"
@@ -218,7 +227,7 @@
                 </div>
             </footer>
         </div>
-
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
         <script src="js/main.min.js"></script>
     </body>
 </html>
