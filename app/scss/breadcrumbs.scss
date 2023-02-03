@@ -17,4 +17,9 @@
         font-size: 14px;
         color: $default;
     }
+
+    &--map {
+        position: relative;
+        z-index: 99;
+    }
 }
