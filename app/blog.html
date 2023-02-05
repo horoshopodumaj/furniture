@@ -8,8 +8,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap"
             rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
         />
         <link rel="stylesheet" href="css/style.min.css" />
     </head>
@@ -62,7 +66,7 @@
                                 </p>
                                 <img
                                     class="rightside-menu__images"
-                                    src="images/Rectangle.jpg"
+                                    src="images/content/Rectangle.jpg"
                                     alt="Rectangle"
                                 />
                             </div>
@@ -181,7 +185,10 @@
                                     </p>
                                 </div>
                                 <div class="pagination">
-                                    <a class="pagination__arrow" href="#">
+                                    <a
+                                        class="pagination__arrow pagination__arrow--disabled"
+                                        href="#"
+                                    >
                                         <img
                                             class="pagination__arrow-icon"
                                             src="images/arrow-left.svg"
@@ -428,7 +435,7 @@
                 </div>
             </footer>
         </div>
-
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
         <script src="js/main.min.js"></script>
     </body>
 </html>
