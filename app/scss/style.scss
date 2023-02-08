@@ -31,5 +31,7 @@
     }
     @media (max-width: 540px) {
         order: -1;
+        position: relative;
+        z-index: 12;
     }
 }

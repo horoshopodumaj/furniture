@@ -3,9 +3,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 43px 0 46px 0;
+        height: 120px;
         @media (max-width: 540px) {
             flex-wrap: wrap;
+            padding-top: 42px;
         }
     }
 
@@ -22,6 +23,8 @@
     &__btn-menu {
         display: none;
         @media (max-width: 540px) {
+            position: relative;
+            z-index: 12;
             display: block;
             background-color: transparent;
             border: none;

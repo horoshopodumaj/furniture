@@ -6,8 +6,12 @@
         background-color: #fff;
         position: relative;
         z-index: 11;
-        padding: 50px 0;
         text-align: center;
+        transform: translateY(-350px);
+        transition: all 0.5s;
+        &--open {
+            transform: translateY(30px);
+        }
     }
     &__list {
         display: flex;
@@ -24,11 +28,18 @@
                 padding-right: 0;
             }
         }
+        @media (max-width: 540px) {
+            padding-right: 0;
+        }
     }
     &__list-link {
         @extend %title-font;
         line-height: 22px;
         color: rgba(54, 56, 56, 0.9);
+        @media (max-width: 540px) {
+            display: block;
+            padding: 15px 0;
+        }
     }
 
     &__list-link--active {
