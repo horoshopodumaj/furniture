@@ -7,6 +7,14 @@
         text-align: center;
         padding: 160px 0;
         margin-top: -53px;
+        @media (max-width: 768px) {
+            padding: 80px 0;
+        }
+        .about__prev-title {
+            @media (max-width: 540px) {
+                font-size: 40px;
+            }
+        }
     }
 
     &__prev-title {
