@@ -14,6 +14,10 @@
         align-items: flex-end;
         border-bottom: 2px solid rgba($title, 0.7);
         position: relative;
+        @media (max-width: 650px) {
+            border: none;
+            flex-wrap: wrap;
+        }
         &::before {
             content: "";
             position: absolute;
@@ -23,6 +27,9 @@
             height: 10px;
             border-radius: 50%;
             background-color: $title;
+            @media (max-width: 650px) {
+                display: none;
+            }
         }
     }
 
@@ -32,6 +39,18 @@
         flex-wrap: wrap;
         align-items: center;
         position: relative;
+        @media (max-width: 840px) {
+            width: 350px;
+        }
+        @media (max-width: 650px) {
+            width: 100%;
+        }
+        .works-path__item-title {
+            @media (max-width: 540px) {
+                font-size: 16px;
+                line-height: 27px;
+            }
+        }
     }
 
     &__item--consultation,
@@ -40,6 +59,13 @@
     }
     &__item--production {
         margin-left: 317px;
+        @media (max-width: 840px) {
+            margin-left: 50px;
+        }
+        @media (max-width: 650px) {
+            margin-left: 0px;
+            order: 1;
+        }
         &::after {
             content: "";
             position: absolute;
@@ -48,12 +74,26 @@
             height: 20px;
             width: 2px;
             background: rgba($title, 0.7);
+            @media (max-width: 650px) {
+                display: none;
+            }
         }
     }
 
     &__item--measuring {
         padding-top: 38px;
         margin-left: 305px;
+        @media (max-width: 840px) {
+            margin-left: 250px;
+        }
+        @media (max-width: 768px) {
+            margin-left: 100px;
+        }
+        @media (max-width: 650px) {
+            margin-left: 0;
+            padding-top: 0;
+            padding-bottom: 38px;
+        }
         &::before {
             content: "";
             position: absolute;
@@ -62,6 +102,9 @@
             height: 20px;
             width: 2px;
             background: rgba($title, 0.7);
+            @media (max-width: 650px) {
+                display: none;
+            }
         }
     }
 

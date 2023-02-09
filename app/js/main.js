@@ -10,6 +10,14 @@ $(function () {
         $(".menu").toggleClass("menu--open");
     });
 
+    $(window).resize(() => {
+        if ($(window).width() < 651) {
+            $(".works-path__item--measuring").appendTo($(".works-path__items-box"));
+        } else {
+            $(".works-path__item--measuring").appendTo($(".works-path__items"));
+        }
+    });
+
     $(".top__slider").slick({
         dots: true,
         arrows: false,
