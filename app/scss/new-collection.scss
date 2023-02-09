@@ -2,7 +2,6 @@
     text-align: center;
     padding: 45px 0 35px;
     &__title {
-        color: $title;
         font-size: 36px;
         line-height: 51px;
         padding-bottom: 25px;
@@ -24,5 +23,8 @@
     &__text {
         min-width: 730px;
         margin: 0 auto 30px;
+        @media (max-width: 840px) {
+            min-width: 100%;
+        }
     }
 }
