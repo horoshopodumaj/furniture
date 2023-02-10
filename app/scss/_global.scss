@@ -41,8 +41,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     li {
         margin: 0 15px;
+        @media (max-width: 650px) {
+            margin: 0 5px;
+        }
     }
     button {
         background-color: $title;

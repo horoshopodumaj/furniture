@@ -31,6 +31,12 @@
         @media (max-width: 540px) {
             padding-right: 0;
         }
+        .menu__list-link {
+            @media (max-width: 540px) {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
     }
     &__list-link {
         @extend %title-font;
@@ -54,6 +60,9 @@
             height: 2px;
             border-radius: 1px;
             background-color: rgba($title, 0.7);
+            @media (max-width: 540px) {
+                display: none;
+            }
         }
     }
 }

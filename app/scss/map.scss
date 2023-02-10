@@ -1,4 +1,13 @@
 .map {
     margin-top: -53px;
     margin-bottom: 50px;
+    iframe {
+        height: 578px;
+        @media (max-width: 768px) {
+            height: 375px;
+        }
+    }
+    @media (max-width: 1366px) {
+        margin-top: 0;
+    }
 }

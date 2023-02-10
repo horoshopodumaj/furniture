@@ -15,6 +15,7 @@
     }
     &.rightside-menu--close {
         transform: translateX(150%);
+        display: none;
     }
     &__close {
         background-color: transparent;
