@@ -10,6 +10,16 @@
         color: $title;
         margin-bottom: 30px;
         padding: 0 40px;
+        @media (max-width: 375px) {
+            padding: 0 20px;
+            line-height: 27px;
+        }
+        .blog__blockquote-author {
+            @media (max-width: 540px) {
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
     }
 
     .blog__blockquote-author::before {
@@ -21,6 +31,12 @@
 .blog-one {
     &__tags {
         margin-bottom: 30px;
+        .blog-one__tags-title {
+            @media (max-width: 540px) {
+                font-size: 20px;
+                line-height: 31px;
+            }
+        }
     }
 
     &__tags-title {
@@ -49,6 +65,9 @@
         border-bottom: 1px solid #dfdfdf;
         display: flex;
         justify-content: space-between;
+        @media (max-width: 540px) {
+            padding: 30px 0;
+        }
     }
 
     &__link {
@@ -57,6 +76,11 @@
         font-size: 14px;
         color: #707070;
         font-weight: 600;
+        span {
+            @media (max-width: 540px) {
+                display: none;
+            }
+        }
         &::before {
             content: "";
             position: absolute;
@@ -84,6 +108,21 @@
         }
     }
 
+    &__comments {
+        .blog-one__comments-title {
+            @media (max-width: 540px) {
+                font-size: 20px;
+                line-height: 31px;
+            }
+        }
+        .blog-one__comments-name {
+            @media (max-width: 540px) {
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+    }
+
     &__comments-title {
         color: $title;
         @extend %title-font;
@@ -96,6 +135,9 @@
         justify-content: space-between;
         align-items: flex-start;
         margin-bottom: 40px;
+        @media (max-width: 540px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__comments-avatar {
@@ -104,6 +146,16 @@
         object-fit: cover;
         border-radius: 50%;
         margin-right: 13px;
+        @media (max-width: 540px) {
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    &__comments-info {
+        @media (max-width: 540px) {
+            margin-top: -46px;
+        }
     }
 
     &__reply {
@@ -115,23 +167,39 @@
         font-weight: 600;
         color: #707070;
         cursor: pointer;
+        @media (max-width: 540px) {
+            margin-left: 0px;
+            margin-top: 5px;
+        }
     }
 
     &__comments-name {
         color: $title;
         @extend %title-font;
         line-height: 23px;
+        @media (max-width: 540px) {
+            margin-left: 55px;
+        }
     }
     &__comments-date {
         margin-bottom: 10px;
         font-size: 14px;
         color: #a1a1a1;
+        @media (max-width: 540px) {
+            margin-left: 55px;
+        }
     }
 
     &__form {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        .blog-one__form-title {
+            @media (max-width: 540px) {
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
     }
 
     &__form-title {
@@ -164,6 +232,9 @@
         padding: 6px 17px;
         margin-bottom: 20px;
         width: 49%;
+        @media (max-width: 540px) {
+            width: 100%;
+        }
         &::placeholder {
             color: #a1a1a1;
             font-size: 16px;
@@ -187,5 +258,8 @@
         font-weight: 600;
         padding: 6px 60px;
         cursor: pointer;
+        @media (max-width: 540px) {
+            width: 100%;
+        }
     }
 }
